@@ -1,6 +1,8 @@
 /* top navigation menu */
 .navbar {
-    background-color: #40242f;
+    background-color: #1a2930;
+    position: fixed;
+    z-index: 20;
 }
 
 a {
@@ -70,19 +72,20 @@ a {
     transform-origin: center;
 }
 
-#bannerVid {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+.parallex, .bannerContent {
+height: 500px;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
+
 .bannerContent {
-    position: fixed;
-    bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #eee;
     width: 100%;
     padding: 20px;
-}
+    position: absolute;
+    top: 64px;
+} 

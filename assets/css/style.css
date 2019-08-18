@@ -1,0 +1,88 @@
+/* top navigation menu */
+.navbar {
+    background-color: #40242f;
+}
+
+a {
+    color: #eee;
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #21151a;
+    opacity: .9;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlayContent {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #eee;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #eee;
+    background-color: #231920;
+}
+
+.close {
+    color: #eee;
+    position: absolute;
+    right: 45px;
+    top: 28px;
+    font-size: 60px;
+    font-weight: bold;
+    float: right;
+    padding-bottom: 14px;
+    -webkit-transition: 1s ease-out;
+    -moz-transition: 1s ease-out;
+    transition: 1s ease-out;
+    
+}
+
+.close:hover,
+.close:focus {
+    color: #676968;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transform: rotateZ(360deg);
+    -webkit-transform-origin: center;
+    -moz-transform: rotateZ(360deg);
+    -moz-transform-origin: center;
+    transform: rotateZ(360deg);
+    transform-origin: center;
+}
+
+#bannerVid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.bannerContent {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #eee;
+    width: 100%;
+    padding: 20px;
+}

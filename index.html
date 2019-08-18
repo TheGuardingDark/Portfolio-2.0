@@ -6,10 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Liv Heller</title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
     <body>
-        
+        <nav class="navbar" role="navigation">
+            <div class="nav-wrapper container">
+              <a id="logo-container" href="#" class="brand-logo" onclick="openSideNav()">Liv Heller</a>
+            </div>
+          </nav>
+        <div id="top"></div>
+
+        <div id="slideNav" class="overlay">
+            <span onclick="closeNav()" class="close">&times;</span> 
+            
+            <div class="overlayContent">
+                <a href="#">About Me</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact Me</a>
+            </div>
+        </div>
+
+        <div id="index-banner" class="parallax-container">
+                <div class="section no-pad-bot bannerContent">
+                  <div class="container">
+                    <br><br>
+                    <h1 class="header center text-lighten-2">Liv Heller</h1>
+                    <div class="row center">
+                      <h5 class="header col s12 light">Bridging the Gap Between Functionality and Aesthetic</h5>
+                    </div>
+                    <br><br>
+            
+                  </div>
+                </div>
+                <div class="parallax">
+                    <video autoplay muted loop id="bannerVid">
+                    <source src="assets/images/tesseract.mp4" alt="tesseract in motion">
+                    </video>
+                </div>
+        </div>
+
+
+
+        <script type="text/javascript" src="assets/js/index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>          
     </body>
 </html>

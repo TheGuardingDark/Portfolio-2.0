@@ -9,6 +9,19 @@ a {
     color: #eee;
 }
 
+.glowBall {
+    position: absolute;
+    top: 21px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow:
+    0 0 10px 9px #fff,
+    0 0 26px 23px #ff00ff,
+    0 0 85px 44px #0066ff;
+}
+
 .overlay {
     height: 0;
     width: 100%;
@@ -48,11 +61,10 @@ a {
     color: #eee;
     position: absolute;
     right: 45px;
-    top: 28px;
+    top: 56px;
     font-size: 60px;
     font-weight: bold;
     float: right;
-    padding-bottom: 14px;
     -webkit-transition: 1s ease-out;
     -moz-transition: 1s ease-out;
     transition: 1s ease-out;
@@ -89,3 +101,220 @@ background-size: cover;
     position: absolute;
     top: 64px;
 } 
+
+/* timeline section */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a2930;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.portCon {
+    position: relative;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #c5c1c0;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #676968;
+}
+
+.numbertext {
+    color: #c5c1c0;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+.active, .opacity:hover {
+    opacity: 1;
+}
+
+.slide {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transorm: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.slides:hover .slide {
+    opacity: 0.3;
+}
+
+.slides:hover .middle {
+    opacity: 1;
+}
+
+.imgText {
+    background-color: #2b1f27;
+    color: #c5c1c0;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.tagline {
+    color: #c5c1c0;
+}
+
+
+.aboutHeader {
+    position: relative;
+    top: -80px;
+}
+
+
+.portrait {
+    max-width: 100%;
+}
+
+.aboutTimeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.aboutTimeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #aaaaaa;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.aboutContainer {
+    padding: 15px 40px;
+    position: relative;
+    background-color: #2b1f27;
+    width: 50%;
+}
+
+.aboutContainer::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #f7ce3e;
+    border: 4px solid #0a1612;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+    top: -97px;
+}
+
+.right {
+    left: 4%;
+    top: -30px;
+}
+
+.sideBlurb {
+    top: -57px;
+}
+
+.sideBlurbTwo {
+    left: 38;
+    top: 0;
+}
+
+.sideBlurbThree {
+    top: -17px;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #c5c1c0;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #c5c1c0;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #c5c1c0;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #c5c1c0 transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.aboutContent {
+    padding: 20px 30px;
+    background-color: #c5c1c0;
+    position: relative;
+    border-radius: 6px;
+}

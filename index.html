@@ -13,7 +13,9 @@
     <body>
         <nav class="navbar" role="navigation">
             <div class="nav-wrapper container">
-              <a id="logo-container" href="#" class="brand-logo" onclick="openSideNav()">Liv Heller</a>
+              <a id="logo-container" href="#" class="brand-logo" onclick="openSideNav()">
+                <div class="glowBall"></div>
+              </a>
             </div>
           </nav>
         <div id="top"></div>
@@ -46,51 +48,156 @@
                     </video>
                 </div>
         </div>
-
-
-        <div class="container">
-                <div class="section">
-            
-                  <!--   Icon Section   -->
-                  <div class="row">
-                    <div class="col s12 m4">
-                      <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons">About Me</i></h2>
-                        <h5 class="center">I do a lot of things, but mostly I make stuff. </h5>
-            
-                        <div class="aboutSection">
-                                <p class="aboutText">Currently, I make stuff by repeatedly bashing my head against a keyboard, but in the past I've made prosthetic pieces for film, secret passageways for escape rooms, a Secret Society hideaway for weekly soirées, a Winter Wonderland in the heart of LA, Zombies (I mean A LOT of Zombies), and so much more.</p>
-                                <p>My ultimate passion is story-telling and I'm always looking for new mediums in which to explore the art of narrative. This journey has taken me from film and television, to immersive entertainment and haunts, to videogames and experimental ARGs.</p>
-                                <p>After acquiring a BFA in Special Effects from The Academy of Art University in San Francisco, I moved to LA where I stayed for the next decade.</p>
-                                <p>Eventually, I found myself back in my hometown of Colorado Springs, where I currently reside.</p>
-                                <p>When I'm not covering people with fake blood, and gluing my fingers together, I can be found at home with my dog, probably sleeping.</p>                          
-                            </div>
+        
+        <div class="portfolioContainer">
+            <div class="portCon">
+              <h2 class="center brown-text"><i class="material-icons">Portfolio</i></h2>
+              <div class="slides">
+                    <img src="assets/images/Moon Madness.png" style="width:100%" class="slide">
+                    <div class="middle">
+                      <div class="imgText">
+                          <h3>Moon Madness is an app designed to research the correllation between crime and external conditions, such as moon phase, weather, time of day, and day of week. My focus was on generating the map and icons, as well as communicating with the US Muncipal API.</h3>
+                          <a class="btn btnL" href="https://github.com/TheGuardingDark/ProjectOne">Git Hub Link</a>
+                          <a class="btn btnR" href="https://theguardingdark.github.io/ProjectOne/">Moon Madness</a>
                       </div>
                     </div>
-            
-                    <div class="col s12 m4">
-                      <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons"></i></h2>
-                        <h5 class="center"></h5>
-            
-                        <img src="assets/images/LHELLER.JPG" class="portrait" alt="portrait"/>
-
+                </div>
+              
+                <div class="slides">
+                    <img src="assets/images/cave.jpg" style="width:100%" class="slide">
+                    <div class="middle">
+                      <div class="imgText">
+                         <h3>Beedle's Rupee Game utilizes jquery and javascript to generate rupees and assign random values to each. Players win by using the rupees to match the target number displayed each round.</h3>
+                          <a class="btn btnL" href="https://github.com/TheGuardingDark/unit-4-game">Git Hub Link</a>
+                          <a class="btn btnR" href="https://theguardingdark.github.io/unit-4-game/">Rupee Counter</a>
                       </div>
                     </div>
-            
-                    <div class="col s12 m4">
-                      <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons">Portfolio</i></h2>
-                        <h5 class="center">Coding. Design. Special Effects.</h5>
-            
-                        <p class="light">insert portfolio stuff here</p>
+                </div>
+              
+                <div class="slides">
+                    <img src="assets/images/graves.jpg" style="width:100%" class="slide">
+                    <div class="middle">
+                        <div class="imgText">
+                            <h3>Guess that Horror Movie uses javascript to let players guess letters in a hangman-style game. Currently not mobile responsive.</h3>
+                            <a class="btn btnL" href="https://github.com/TheGuardingDark/Word-Guess-Game">Git Hub Link</a>
+                            <a class="btn btnR" href="https://theguardingdark.github.io/Word-Guess-Game/">Word Guess</a>
+                        </div>
                       </div>
+                </div>
+              
+                <div class="slides">
+                    <img src="assets/images/gameover.jpg" style="width:100%" class="slide">
+                    <div class="middle">
+                        <div class="imgText">
+                            <h3>A video game themed multiple choice quiz. Utilizes javascript timers and opacity to switch between questions. Returns answers green if correct and red if wrong.</h3>
+                            <a class="btn btnL" href="https://github.com/TheGuardingDark/TriviaGame">Git Hub Link</a>
+                            <a class="btn btnR" href="https://theguardingdark.github.io/TriviaGame/">Trivia Game</a>
+                        </div>
+                      </div>
+                </div>
+              
+                <div class="slides">
+                    <img src="assets/images/friendFinder.png" style="width:100%" class="slide">
+                    <div class="middle">
+                        <div class="imgText">
+                            <h3>Friend Finder utilizes express to create a full-stack website that compares user survey input against an API of stored users and returns the closest match.</h3>
+                            <a class="btn btnL" href="https://github.com/TheGuardingDark/Friend-Finder">Git Hub Link</a>
+                            <a class="btn btnR" href="https://rocky-sands-51641.herokuapp.com/">Friend Finder</a>
+                        </div>
+                      </div>
+                </div>
+              
+                <div class="slides">
+                    <img src="assets/images/Burgers .png" style="width:100%" class="slide">
+                    <div class="middle">
+                        <div class="imgText">
+                            <h3>Burger eating Orm that uses handlebars to create elements on the page and is linked through express to a mysql database.</h3>
+                            <a class="btn btnL" href="https://github.com/TheGuardingDark/Burger-Eater">Git Hub Link</a>
+                            <a class="btn btnR" href="https://still-plains-86854.herokuapp.com/">Burger Eater</a>
+                        </div>
+                      </div>
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+               <!-- Thumbnails -->
+                <div class="row">
+                  <div class="column">
+                    <img class="opacity cursor" src="assets/images/Moon Madness.png" style="width:100%" onclick="currentSlide(1)" alt="Moon Madness Landing Page">
+                  </div>
+                  <div class="column">
+                    <img class="opacity cursor" src="assets/images/cave.jpg" style="width:100%" onclick="currentSlide(2)" alt="Zelda Cave">
+                  </div>
+                  <div class="column">
+                    <img class="opacity cursor" src="assets/images/graves.jpg" style="width:100%" onclick="currentSlide(3)" alt="Gravestones">
+                  </div>
+                  <div class="column">
+                    <img class="opacity cursor" src="assets/images/gameover.jpg" style="width:100%" onclick="currentSlide(4)" alt="Game Over">
+                  </div>
+                  <div class="column">
+                    <img class="opacity cursor" src="assets/images/friendFinder.png" style="width:100%" onclick="currentSlide(5)" alt="Friend Finder">
+                  </div>
+                  <div class="column">
+                    <img class="opacity cursor" src="assets/images/Burgers .png" style="width:100%" onclick="currentSlide(6)" alt="burgers">
+                  </div>
+                  </div>
+            </div>      
+          </div>
+        
+        <!-- <div id="about" class="parallax-container"> -->
+            <div class="section no-pad-top">
+              <div class="container">
+                <br><br>
+                  <div class="section">  
+                    <div class="icon-block aboutHeader">
+                      <h2 class="center brown-text"><i class="material-icons">About Me</i></h2>
+                      <h5 class="center tagline">I do a lot of things, but mostly I make stuff. </h5>
                     </div>
                   </div>
-            
-                </div>
+                      <div class="aboutSection">
+                        <div class="aboutTimeline">
+                          <div class="aboutContainer left">
+                            <div class="aboutContent">
+                              <p class="aboutText">Currently, I make stuff by repeatedly bashing my head against a keyboard, but in the past I've made prosthetic pieces for film, secret passageways for escape rooms, a Secret Society hideaway for weekly soirées, a Winter Wonderland in the heart of LA, Zombies (I mean A LOT of Zombies), and so much more.</p>
+                            </div>
+                          </div>
+                          <div class="aboutContainer right">
+                            <div class="aboutContent">
+                              <img src="assets/images/LHELLER.JPG" class="portrait" alt="portrait"/>
+                            </div>
+                          </div>
+                          <div class="aboutContainer left sideBlurb">
+                            <div class="aboutContent">
+                              <p>My ultimate passion is story-telling and I'm always looking for new mediums in which to explore the art of narrative. This journey has taken me from film and television, to immersive entertainment and haunts, to videogames and experimental ARGs.</p>
+                            </div>
+                          </div>
+                          <div class="aboutContainer right sideBlurbTwo">
+                            <div class="aboutContent">
+                              <p>After acquiring a BFA in Special Effects from The Academy of Art University in San Francisco, I moved to LA where I stayed for the next decade.</p>
+                            </div>
+                          </div>
+                          <div class="aboutContainer left sideBlurbThree">
+                            <div class="aboutContent">
+                              <p>Eventually, I found myself back in my hometown of Colorado Springs, where I currently reside.</p>
+                              <p>When I'm not covering people with fake blood, and gluing my fingers together, I can be found at home with my dog, probably sleeping.</p>                          
+                            </div>
+                          </div>
+                        </div>
+                      </div>
               </div>
-            
+            </div>
+          </div>
+          
+          
+          
+          
+          <div class="parallax">
+            <video autoplay muted loop id="midVid">
+              <source src="assets/images/lights.mp4" alt="light arrows">
+              </video>
+            </div>
 
 
         <script type="text/javascript" src="assets/js/index.js"></script>

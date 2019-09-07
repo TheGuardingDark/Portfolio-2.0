@@ -185,6 +185,7 @@ body {
 }
 
 .middle {
+    padding-bottom: 64px;
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -198,11 +199,17 @@ body {
 }
 
 .slides:hover .slide {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .slides:hover .middle {
     opacity: 1;
+}
+
+.slideImg {
+    width: 50%;
+    position: relative;
+    left: 25%;
 }
 
 .imgText {
@@ -211,6 +218,21 @@ body {
     font-size: 16px;
     padding: 16px 32px;
 }
+
+h3 {
+    font-size: 1.92rem;
+    line-height: 100%;
+    margin: 2.95rem 0 1.167rem 0;
+}
+
+.thumbs {
+    margin-top: 10px;
+}
+
+.thumbImg {
+    max-height: 104px;
+}
+
 
 .tagline {
     color: #c5c1c0;
@@ -272,6 +294,7 @@ body {
 .aboutContainer p {
     font-weight: 900;
     color: #000000;
+    font-size: 16px;
 }
 
 .left {

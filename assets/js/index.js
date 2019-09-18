@@ -1,7 +1,20 @@
 
 var video = document.getElementById("bannerVid");
+// var modal = document.getElementById("modal");
+// var img = document.getElementById("myImg");
+// var modalContent = document.getElementById("desc");
+// var span = document.getElementsByClassName("close")[0];
 
 video.playbackRate = 0.75;
+
+// img.onclick = function() {
+// modal.style.display = "block";
+// modalContent.innerHTML = this.innerHTML;
+// }
+
+// span.onclick = function() {
+//     modal.style.display = "none";
+// }
 
 function openSideNav() {
     document.getElementById("slideNav").style.height = "100%";
@@ -39,3 +52,4 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+

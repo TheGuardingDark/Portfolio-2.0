@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Arimo|Lacquer|Livvic:500&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="assets/css/style.css">
-    <body>
-        <nav class="navbar" role="navigation">
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="nav-wrapper container">
               <a id="logo-container" href="#" class="brand-logo" onclick="openSideNav()">
                 <div class="glowBall"></div>
@@ -23,9 +23,11 @@
             <span onclick="closeNav()" class="close">&times;</span> 
             
             <div class="overlayContent">
-                <a href="#">About Me</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contact Me</a>
+              <ul class="nav navbar-nav">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+              </ul>
             </div>
         </div>
 
@@ -49,9 +51,52 @@
         </div>
         
         <div class="portfolioContainer">
-            <div class="portCon">
-              <h2 class="center brown-text"><i class="material-icons">Portfolio</i></h2>
-              <div class="slides">
+            <div class="portCon" id="portfolio">
+              <h2 class="center brown-text">Coding Portfolio</h2>
+
+              <div class="row">
+                <div class="column">
+                  <!-- <h3 class="codetxt brown-text">Coding</h3> -->
+                  <img id="myImg" alt="moon" style="width:100%;max-width:300px" src="assets/images/MMsquare.jpg">
+                  <a class="btn btnR" href="https://theguardingdark.github.io/ProjectOne/">Moon Madness</a>
+                  <!-- <div id="modal" class="modal">
+                    <span class="close">&times;</span>
+                    <div class="imgText modal-content" id="desc">
+                        <h3>Moon Madness is an app designed to research the correllation between crime and external conditions, such as moon phase, weather, time of day, and day of week. My focus was on generating the map and icons, as well as communicating with the US Muncipal API.</h3>
+                        <a class="btn btnL" href="https://github.com/TheGuardingDark/ProjectOne">Git Hub Link</a>
+                        <a class="btn btnR" href="https://theguardingdark.github.io/ProjectOne/">Moon Madness</a>
+                    </div>
+                  </div> -->
+                  <img src="assets/images/cavesquare.png">
+                  <a class="btn btnR" href="https://theguardingdark.github.io/unit-4-game/">Rupee Collector</a>
+                </div>
+                <div class="column">
+                    <img src="assets/images/clickygameSquare.png">
+                    <a class="btn btnL" href="https://github.com/TheGuardingDark/Clicky-Game">Clicky Game</a>
+                    <img src="assets/images/friendFinder.png">
+                    <a class="btn btnL" href="https://github.com/TheGuardingDark/Friend-Finder">Friend Finder</a>
+                </div>
+                <div class="column">
+                    <img src="assets/images/gameover.jpg">
+                    <a class="btn btnL" href="https://github.com/TheGuardingDark/TriviaGame">TriviaGame</a>
+                    <img src="assets/images/gravessquare.png">
+                    <a class="btn btnL" href="https://github.com/TheGuardingDark/Word-Guess-Game">Word-Guess-Game</a>
+                </div>
+                <div class="column">
+                    <img src="assets/images/scrapersquare.png">
+                    <a class="btn btnL" href="https://github.com/TheGuardingDark/Onion-Scraper">Onion Scraper</a>
+                  <!-- <img src="assets/images/BurgersSquare .png"> -->
+                </div>
+
+                <!-- <div class="column">
+                  <h3 class="designtxt">Scenic</h3>
+
+                </div>
+                <div class="column">
+                  <h3 class="sfxtxt">Special Effects</h3>
+                </div> -->
+              <!-- </div> -->
+              <!-- <div class="slides">
                     <img src="assets/images/Moon Madness.png" style="width:50%" class="slide slideImg">
                     <div class="middle">
                       <div class="imgText">
@@ -126,80 +171,59 @@
                           <a class="btn btnR" href="https://video-game-clicky.herokuapp.com/">Clicky Game</a>
                       </div>
                     </div>
-              </div>
+                  </div>
               
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              
-               <!-- Thumbnails -->
-                <div class="row thumbs">
-                  <div class="column">
-                    <img class="opacity cursor thumbImg" src="assets/images/Moon Madness.png" style="width:100%" onclick="currentSlide(1)" alt="Moon Madness Landing Page">
-                  </div>
-                  <div class="column">
-                    <img class="opacity cursor thumbImg" src="assets/images/cave.jpg" style="width:100%" onclick="currentSlide(2)" alt="Zelda Cave">
-                  </div>
-                  <div class="column">
-                    <img class="opacity cursor thumbImg" src="assets/images/graves.jpg" style="width:100%" onclick="currentSlide(3)" alt="Gravestones">
-                  </div>
-                  <div class="column">
-                    <img class="opacity cursor thumbImg" src="assets/images/gameover.jpg" style="width:100%" onclick="currentSlide(4)" alt="Game Over">
-                  </div>
-                  <div class="column">
-                    <img class="opacity cursor thumbImg" src="assets/images/friendFinder.png" style="width:100%" onclick="currentSlide(5)" alt="Friend FInder">
-                  </div>
-                  <div class="column">
-                    <img class="opacity cursor thumbImg" src="assets/images/clickygame.png" style="width:100%" onclick="currentSlide(6)" alt="Clicky Game">
-                  </div>
-                  <div class="column">
-                    <img class="opacity cursor thumbImg" src="assets/images/scraper.PNG" style="width:100%" onclick="currentSlide(7)" alt="Web Scraper">
-                  </div>
-                  </div>
+               
             </div>      
           </div>
         
-        <div id="about" class="parallax-container">
+         <!-- <div id="about" class="parallax-container"> -->
+           <div id="about" class="parallax-container">
             <div class="section no-pad-top">
               <div class="container">
                 <br><br>
                   <div class="section">  
                     <div class="icon-block aboutHeader">
-                      <h2 class="center brown-text"><i class="material-icons">About Me</i></h2>
+                      <h2 class="center brown-text">About Me</h2>
                       <h5 class="center tagline">I do a lot of things, but mostly I make stuff. </h5>
                     </div>
-                  </div>
-                      <div class="aboutSection">
-                        <div class="aboutTimeline">
-                          <div class="aboutContainer left">
+                  </div>  
+                  <div class="flex-container">
+                      <div class="row">
+                        <div class="column aboutTimeline">
                             <div class="aboutContent">
                               <p class="aboutText">Currently, I make stuff by repeatedly bashing my head against a keyboard, but in the past I've made prosthetic pieces for film, secret passageways for escape rooms, a Secret Society hideaway for weekly soirées, a Winter Wonderland in the heart of LA, Zombies (I mean A LOT of Zombies), and so much more.</p>
                             </div>
                           </div>
-                          <div class="aboutContainer right">
+                          <div class="column aboutContainer">
                             <div class="aboutContent">
                               <img src="assets/images/LHELLER.JPG" class="portrait" alt="portrait"/>
                             </div>
                           </div>
-                          <div class="aboutContainer left sideBlurb">
+                          <div class="column aboutContainer">
                             <div class="aboutContent">
                               <p>My ultimate passion is story-telling and I'm always looking for new mediums in which to explore the art of narrative. This journey has taken me from film and television, to immersive entertainment and haunts, to videogames and experimental ARGs.</p>
                             </div>
                           </div>
-                          <!-- <div class="aboutContainer right sideBlurbTwo">
+                        </div>
+                        <div class="row">
+                          <div class="column aboutContainer">
                             <div class="aboutContent">
                               <p>After acquiring a BFA in Special Effects from The Academy of Art University in San Francisco, I moved to LA where I stayed for the next decade.</p>
                             </div>
-                          </div> -->
-                          <div class="aboutContainer left sideBlurbThree">
+                          </div>
+                          <div class="column aboutContainer">
                             <div class="aboutContent">
                               <p>Eventually, I found myself back in my hometown of Colorado Springs, where I currently reside.</p>
-                              <p>When I'm not covering people with fake blood, and gluing my fingers together, I can be found at home with my dog, probably sleeping.</p>                          
                             </div>
                           </div>
-                        </div>
+                          <div class="column aboutContainer">
+                            <div class="aboutContent">
+                              <p>When I'm not covering people with fake blood or coding, I can be found at home with my dog, probably sleeping.</p>                          
+                            </div>
+                          </div>
+                       </div>
                       </div>
-              </div>
               <div class="parallax">
                 <video autoplay muted loop id="midVid">
                   <source src="assets/images/arrows.mp4" alt="light arrows">
@@ -208,14 +232,14 @@
             </div>
           </div>
           
-          <div class="break"></div>
+          <div class="break" id="contact"></div>
           
           
           
 
 
         <script type="text/javascript" src="assets/js/index.js"></script>
-        <script type="text/javascript" src="https://form.jotform.com/jsform/92311428186153"></script>
+        <script  type="text/javascript" src="https://form.jotform.com/jsform/92311428186153"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>          
     </body>
 </html>

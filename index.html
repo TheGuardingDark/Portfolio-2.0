@@ -9,14 +9,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Arimo|Lacquer|Livvic:500&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="assets/css/style.css">
+
+
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="nav-wrapper container">
               <a id="logo-container" href="#" class="brand-logo" onclick="openSideNav()">
                 <div class="glowBall"></div>
               </a>
             </div>
-          </nav>
+        </nav>
+
         <div id="top"></div>
 
         <div id="slideNav" class="overlay">
@@ -36,11 +40,10 @@
                   <div class="container">
                     <br><br>
                     <h1 class="header center text-lighten-2">Liv Heller</h1>
-                    <div class="row center">
-                      <h5 class="header col s12 light">Bridging the Gap Between Functionality and Aesthetic</h5>
-                    </div>
+                      <div class="row center headline">
+                        <h5 class="header col s12 light">Bridging the Gap Between Functionality and Aesthetic</h5>
+                      </div>
                     <br><br>
-            
                   </div>
                 </div>
                 <div class="parallax">
@@ -54,130 +57,110 @@
             <div class="portCon" id="portfolio">
               <h2 class="center brown-text">Coding Portfolio</h2>
 
-              <div class="row">
-                <div class="column">
-                  <!-- <h3 class="codetxt brown-text">Coding</h3> -->
-                  <img id="myImg" alt="moon" style="width:100%;max-width:300px" src="assets/images/MMsquare.jpg">
-                  <a class="btn btnR" href="https://github.com/TheGuardingDark/ProjectOne-MoonMadness">Moon Madness</a>
-                  <!-- <div id="modal" class="modal">
-                    <span class="close">&times;</span>
-                    <div class="imgText modal-content" id="desc">
+              <div class="row"> 
+                <div class="col s1">
+                  <img onclick="openModal();currentSlide(1)" alt="moon" style="width:100%;max-width:100px" src="assets/images/MMsquare.jpg" class="hover-shadow circle">
+                </div>
+                <div class="col s1">
+                  <img onclick="openModal();currentSlide(2)" alt="rupees" style="width:100%;max-width:100px" src="assets/images/cavesquare.png" class="hover-shadow circle">
+                </div> 
+                <div class="col s1">
+                  <img onclick="openModal();currentSlide(3)" alt="clicky" style="width:100%;max-width:100px" src="assets/images/clickygameSquare.png" class="hover-shadow circle">
+                </div>
+                <div class="col s1">
+                  <img onclick="openModal();currentSlide(4)" alt="friends" style="width:100%;max-width:100px" src="assets/images/friendFinder.png" class="hover-shadow circle">
+                </div>
+                <div class="col s1">
+                  <img onclick="openModal();currentSlide(5)" alt="gameover" style="width:100%;max-width:100px" src="assets/images/gameover.jpg" class="hover-shadow circle">
+                </div>
+                <div class="col s1">
+                  <img onclick="openModal();currentSlide(6)" alt="graves" style="width:100%;max-width:100px" src="assets/images/gravessquare.png" class="hover-shadow circle">
+                </div> 
+                <div class="col s1">
+                  <img onclick="openModal();currentSlide(7)" alt="scraper" style="width:100%;max-width:100px" src="assets/images/scrapersquare.png" class="hover-shadow circle">
+                </div>
+              </div>
+
+                  <div id="portModal" class="modal"> 
+                    <span class="modalClose cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                      <div class="mySlides">
                         <h3>Moon Madness is an app designed to research the correllation between crime and external conditions, such as moon phase, weather, time of day, and day of week. My focus was on generating the map and icons, as well as communicating with the US Muncipal API.</h3>
-                        <a class="btn btnL" href="https://github.com/TheGuardingDark/ProjectOne">Git Hub Link</a>
-                        <a class="btn btnR" href="https://theguardingdark.github.io/ProjectOne/">Moon Madness</a>
-                    </div>
-                  </div> -->
-                  <img src="assets/images/cavesquare.png">
-                  <a class="btn btnR" href="https://github.com/TheGuardingDark/Rupee-Collector">Rupee Collector</a>
-                </div>
-                <div class="column">
-                    <img src="assets/images/clickygameSquare.png">
-                    <a class="btn btnL" href="https://github.com/TheGuardingDark/Clicky-Game">Clicky Game</a>
-                    <img src="assets/images/friendFinder.png">
-                    <a class="btn btnL" href="https://github.com/TheGuardingDark/Friend-Finder">Friend Finder</a>
-                </div>
-                <div class="column">
-                    <img src="assets/images/gameover.jpg">
-                    <a class="btn btnL" href="https://github.com/TheGuardingDark/TriviaGame">TriviaGame</a>
-                    <img src="assets/images/gravessquare.png">
-                    <a class="btn btnL" href="https://github.com/TheGuardingDark/Word-Guess-Game">Word-Guess-Game</a>
-                </div>
-                <div class="column">
-                    <img src="assets/images/scrapersquare.png">
-                    <a class="btn btnL" href="https://github.com/TheGuardingDark/Onion-Scraper">Onion Scraper</a>
-                  <!-- <img src="assets/images/BurgersSquare .png"> -->
-                </div>
+                        <a class="btn btnL" href="https://github.com/TheGuardingDark/ProjectOne-MoonMadness">Git Hub Link</a>
+                        <a class="btn btnR" href="https://theguardingdark.github.io/ProjectOne-MoonMadness/">Moon Madness</a>
+                      </div>
 
-                <!-- <div class="column">
-                  <h3 class="designtxt">Scenic</h3>
+                      <div class="mySlides">
+                          <h3>Beedle's Rupee Game utilizes jquery and javascript to generate rupees and assign random values to each. Players win by using the rupees to match the target number displayed each round.</h3>
+                          <a class="btn btnL" href="https://github.com/TheGuardingDark/Rupee-Collector">Git Hub Link</a>
+                          <a class="btn btnR" href="https://theguardingdark.github.io/Rupee-Collector/">Rupee Counter</a>
+                      </div>
 
-                </div>
-                <div class="column">
-                  <h3 class="sfxtxt">Special Effects</h3>
-                </div> -->
-              <!-- </div> -->
-              <!-- <div class="slides">
-                    <img src="assets/images/Moon Madness.png" style="width:50%" class="slide slideImg">
-                    <div class="middle">
-                      <div class="imgText">
-                          <h3>Moon Madness is an app designed to research the correllation between crime and external conditions, such as moon phase, weather, time of day, and day of week. My focus was on generating the map and icons, as well as communicating with the US Muncipal API.</h3>
-                          <a class="btn btnL" href="https://github.com/TheGuardingDark/ProjectOne">Git Hub Link</a>
-                          <a class="btn btnR" href="https://theguardingdark.github.io/ProjectOne/">Moon Madness</a>
-                      </div>
-                    </div>
-                </div>
-              
-                <div class="slides">
-                    <img src="assets/images/cave.jpg" style="width:50%" class="slide slideImg">
-                    <div class="middle">
-                      <div class="imgText">
-                         <h3>Beedle's Rupee Game utilizes jquery and javascript to generate rupees and assign random values to each. Players win by using the rupees to match the target number displayed each round.</h3>
-                          <a class="btn btnL" href="https://github.com/TheGuardingDark/unit-4-game">Git Hub Link</a>
-                          <a class="btn btnR" href="https://theguardingdark.github.io/unit-4-game/">Rupee Counter</a>
-                      </div>
-                    </div>
-                </div>
-              
-                <div class="slides">
-                    <img src="assets/images/graves.jpg" style="width:50%" class="slide slideImg">
-                    <div class="middle">
-                        <div class="imgText">
-                            <h3>Guess that Horror Movie uses javascript to let players guess letters in a hangman-style game. Currently not mobile responsive.</h3>
-                            <a class="btn btnL" href="https://github.com/TheGuardingDark/Word-Guess-Game">Git Hub Link</a>
-                            <a class="btn btnR" href="https://theguardingdark.github.io/Word-Guess-Game/">Word Guess</a>
-                        </div>
-                      </div>
-                </div>
-              
-                <div class="slides">
-                    <img src="assets/images/gameover.jpg" style="width:50%" class="slide slideImg">
-                    <div class="middle">
-                        <div class="imgText">
-                            <h3>A video game themed multiple choice quiz. Utilizes javascript timers and opacity to switch between questions. Returns answers green if correct and red if wrong.</h3>
-                            <a class="btn btnL" href="https://github.com/TheGuardingDark/TriviaGame">Git Hub Link</a>
-                            <a class="btn btnR" href="https://theguardingdark.github.io/TriviaGame/">Trivia Game</a>
-                        </div>
-                      </div>
-                </div>
-              
-                <div class="slides">
-                    <img src="assets/images/friendFinder.png" style="width:50%" class="slide slideImg">
-                    <div class="middle">
-                        <div class="imgText">
-                            <h3>Friend Finder utilizes express to create a full-stack website that compares user survey input against an API of stored users and returns the closest match.</h3>
-                            <a class="btn btnL" href="https://github.com/TheGuardingDark/Friend-Finder">Git Hub Link</a>
-                            <a class="btn btnR" href="https://rocky-sands-51641.herokuapp.com/">Friend Finder</a>
-                        </div>
-                      </div>
-                </div>
-              
-                <div class="slides">
-                    <img src="assets/images/scraper.PNG" style="width:50%" class="slide slideImg">
-                    <div class="middle">
-                        <div class="imgText">
-                            <h3>Web Scraping app that uses Mongoose and handlebars to pull articles and save them to a database.</h3>
-                            <a class="btn btnL" href="https://github.com/TheGuardingDark/Onion-Scraper">Git Hub Link</a>
-                            <a class="btn btnR" href="https://the-scrape-escape.herokuapp.com/">Onion Scraper</a>
-                        </div>
-                      </div>
-                </div>
-
-                <div class="slides">
-                  <img src="assets/images/clickygame.png" style="width:50%" class="slide slideImg">
-                  <div class="middle">
-                      <div class="imgText">
+                      <div class="mySlides">
                           <h3>Memory game built in React where a player must click only the characters that they have not clicked previously.</h3>
                           <a class="btn btnL" href="https://github.com/TheGuardingDark/Clicky-Game">Git Hub Link</a>
                           <a class="btn btnR" href="https://video-game-clicky.herokuapp.com/">Clicky Game</a>
                       </div>
+
+                      <div class="mySlides">
+                          <h3>Friend Finder utilizes express to create a full-stack website that compares user survey input against an API of stored users and returns the closest match.</h3>
+                          <a class="btn btnL" href="https://github.com/TheGuardingDark/Friend-Finder">Git Hub Link</a>
+                          <a class="btn btnR" href="https://rocky-sands-51641.herokuapp.com/">Friend Finder</a>
+                      </div>
+
+                      <div class="mySlides">
+                          <h3>A video game themed multiple choice quiz. Utilizes javascript timers and opacity to switch between questions. Returns answers green if correct and red if wrong.</h3>
+                          <a class="btn btnL" href="https://github.com/TheGuardingDark/TriviaGame">Git Hub Link</a>
+                          <a class="btn btnR" href="https://theguardingdark.github.io/TriviaGame/">Trivia Game</a>
+                      </div>
+
+                      <div class="mySlides">
+                          <h3>Guess that Horror Movie uses javascript to let players guess letters in a hangman-style game. Currently not mobile responsive.</h3>
+                          <a class="btn btnL" href="https://github.com/TheGuardingDark/Word-Guess-Game">Git Hub Link</a>
+                          <a class="btn btnR" href="https://theguardingdark.github.io/Word-Guess-Game/">Word Guess</a>
+                      </div>
+
+                      <div class="mySlides">
+                          <h3>Web Scraping app that uses Mongoose and handlebars to pull articles and save them to a database.</h3>
+                          <a class="btn btnL" href="https://github.com/TheGuardingDark/Onion-Scraper">Git Hub Link</a>
+                          <a class="btn btnR" href="https://the-scrape-escape.herokuapp.com/">Onion Scraper</a>
+                      </div>
+                      
+                      <div class="row thumbs">
+                        <div class="col">
+                          <img class="demo hoverable circle" src="assets/images/MMsquare.jpg" onclick="currentSlide(1)" alt="moon" style="width:100%;max-width:100px">
+                        </div>
+  
+                        <div class="col">
+                          <img class="demo hoverable circle" src="assets/images/cavesquare.png" onclick="currentSlide(2)" alt="cave" style="width:100%;max-width:100px">
+                        </div>
+  
+                        <div class="col">
+                            <img class="demo hoverable circle" src="assets/images/clickygameSquare.png" onclick="currentSlide(3)" alt="clicky" style="width:100%;max-width:100px">
+                        </div>
+  
+                        <div class="col">
+                            <img class="demo hoverable circle" src="assets/images/friendFindersquare.png" onclick="currentSlide(4)" alt="friends" style="width:100%;max-width:100px">
+                        </div>
+  
+                        <div class="col">
+                            <img class="demo hoverable circle" src="assets/images/gameoversquare.jpg" onclick="currentSlide(5)" alt="videogame" style="width:100%;max-width:100px">
+                        </div>
+  
+                        <div class="col">
+                            <img class="demo hoverable circle" src="assets/images/gravessquare.png" onclick="currentSlide(6)" alt="graves" style="width:100%;max-width:100px">
+                        </div>
+  
+                        <div class="col">
+                            <img class="demo hoverable circle" src="assets/images/scrapersquare.png" onclick="currentSlide(7)" alt="scraper" style="width:100%;max-width:100px">
+                        </div>
+                      </div>
+  
                     </div>
-                  </div>
-              
-               
-            </div>      
-          </div>
+                  </div> 
+
         
-         <!-- <div id="about" class="parallax-container"> -->
            <div id="about" class="parallax-container">
             <div class="section no-pad-top">
               <div class="container">
@@ -187,43 +170,20 @@
                       <h2 class="center brown-text">About Me</h2>
                       <h5 class="center tagline">I do a lot of things, but mostly I make stuff. </h5>
                     </div>
-                  </div>  
-                  <div class="flex-container">
-                      <div class="row">
-                        <div class="column aboutTimeline">
-                            <div class="aboutContent">
-                              <p class="aboutText">Currently, I make stuff by repeatedly bashing my head against a keyboard, but in the past I've made prosthetic pieces for film, secret passageways for escape rooms, a Secret Society hideaway for weekly soirées, a Winter Wonderland in the heart of LA, Zombies (I mean A LOT of Zombies), and so much more.</p>
-                            </div>
-                          </div>
-                          <div class="column aboutContainer">
-                            <div class="aboutContent">
-                              <img src="assets/images/LHELLER.JPG" class="portrait" alt="portrait"/>
-                            </div>
-                          </div>
-                          <div class="column aboutContainer">
-                            <div class="aboutContent">
-                              <p>My ultimate passion is story-telling and I'm always looking for new mediums in which to explore the art of narrative. This journey has taken me from film and television, to immersive entertainment and haunts, to videogames and experimental ARGs.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="column aboutContainer">
-                            <div class="aboutContent">
-                              <p>After acquiring a BFA in Special Effects from The Academy of Art University in San Francisco, I moved to LA where I stayed for the next decade.</p>
-                            </div>
-                          </div>
-                          <div class="column aboutContainer">
-                            <div class="aboutContent">
-                              <p>Eventually, I found myself back in my hometown of Colorado Springs, where I currently reside.</p>
-                            </div>
-                          </div>
-                          <div class="column aboutContainer">
-                            <div class="aboutContent">
-                              <p>When I'm not covering people with fake blood or coding, I can be found at home with my dog, probably sleeping.</p>                          
-                            </div>
-                          </div>
-                       </div>
+                  </div>
+
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="assets/images/LHELLER.JPG" alt="Avatar" style="width:300px;height:300px;">
                       </div>
+                      <div class="flip-card-back">
+                        <p>Currently, I make stuff by repeatedly bashing my head against a keyboard, but in the past I've made prosthetic pieces for film, secret passageways for escape rooms, a Secret Society hideaway for weekly soirées, a Winter Wonderland in the heart of LA, and Zombies (I mean A LOT of Zombies). My ultimate passion is story-telling and I'm always looking for new mediums in which to explore the art of narrative.</p>
+                      </div>
+                    </div>
+                  </div>   
+                 
+                  
               <div class="parallax">
                 <video autoplay muted loop id="midVid">
                   <source src="assets/images/arrows.mp4" alt="light arrows">

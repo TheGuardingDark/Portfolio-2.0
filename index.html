@@ -57,27 +57,39 @@
             <div class="portCon" id="portfolio">
               <h2 class="center brown-text">Coding Portfolio</h2>
 
-              <div class="row"> 
-                <div class="col s1">
+              <div class="row port"> 
+                <div class="col s12 icon">
                   <img onclick="openModal();currentSlide(1)" alt="moon" style="width:100%;max-width:100px" src="assets/images/MMsquare.jpg" class="hover-shadow circle">
                 </div>
-                <div class="col s1">
+                <div class="col s12 icon">
                   <img onclick="openModal();currentSlide(2)" alt="rupees" style="width:100%;max-width:100px" src="assets/images/cavesquare.png" class="hover-shadow circle">
                 </div> 
-                <div class="col s1">
+              </div>
+
+              <div class="row port">
+                <div class="col s12 icon">
                   <img onclick="openModal();currentSlide(3)" alt="clicky" style="width:100%;max-width:100px" src="assets/images/clickygameSquare.png" class="hover-shadow circle">
                 </div>
-                <div class="col s1">
-                  <img onclick="openModal();currentSlide(4)" alt="friends" style="width:100%;max-width:100px" src="assets/images/friendFinder.png" class="hover-shadow circle">
+                <div class="col s12 icon">
+                  <img onclick="openModal();currentSlide(4)" alt="runes" style="width:100%;max-width:100px" src="assets/images/runesquare.jpg" class="hover-shadow circle">
                 </div>
-                <div class="col s1">
+              </div>
+
+              <div class="row port">
+                <div class="col s12 icon">
                   <img onclick="openModal();currentSlide(5)" alt="gameover" style="width:100%;max-width:100px" src="assets/images/gameover.jpg" class="hover-shadow circle">
                 </div>
-                <div class="col s1">
+                <div class="col s12 icon">
                   <img onclick="openModal();currentSlide(6)" alt="graves" style="width:100%;max-width:100px" src="assets/images/gravessquare.png" class="hover-shadow circle">
-                </div> 
-                <div class="col s1">
+                </div>
+              </div>
+              
+              <div class="row port">
+                <div class="col s12 icon">
                   <img onclick="openModal();currentSlide(7)" alt="scraper" style="width:100%;max-width:100px" src="assets/images/scrapersquare.png" class="hover-shadow circle">
+                </div>
+                <div class="col s12 icon">
+                  <img onclick="openModal();currentSlide(8)" alt="friend finder" style="width:100px" src="assets/images/friendFindersquare.png" class="hover-shadow circle">
                 </div>
               </div>
 
@@ -86,7 +98,7 @@
                     <div class="modal-content">
 
                       <div class="mySlides">
-                        <h3>Moon Madness is an app designed to research the correllation between crime and external conditions, such as moon phase, weather, time of day, and day of week. My focus was on generating the map and icons, as well as communicating with the US Muncipal API.</h3>
+                        <h3>Moon Madness is an app designed to research the correllation between crime and external conditions. My focus was on generating the map and icons, as well as communicating with the US Muncipal API.</h3>
                         <a class="btn btnL" href="https://github.com/TheGuardingDark/ProjectOne-MoonMadness">Git Hub Link</a>
                         <a class="btn btnR" href="https://theguardingdark.github.io/ProjectOne-MoonMadness/">Moon Madness</a>
                       </div>
@@ -98,15 +110,15 @@
                       </div>
 
                       <div class="mySlides">
-                          <h3>Memory game built in React where a player must click only the characters that they have not clicked previously.</h3>
+                          <h3>Clicky Game is a memory game built in React where a player must click only the characters that they have not clicked previously.</h3>
                           <a class="btn btnL" href="https://github.com/TheGuardingDark/Clicky-Game">Git Hub Link</a>
                           <a class="btn btnR" href="https://video-game-clicky.herokuapp.com/">Clicky Game</a>
                       </div>
 
                       <div class="mySlides">
-                          <h3>Friend Finder utilizes express to create a full-stack website that compares user survey input against an API of stored users and returns the closest match.</h3>
-                          <a class="btn btnL" href="https://github.com/TheGuardingDark/Friend-Finder">Git Hub Link</a>
-                          <a class="btn btnR" href="https://rocky-sands-51641.herokuapp.com/">Friend Finder</a>
+                          <h3>Rune Cast is a runestone divination app created for the website Get Stoned. Created in Unity using C#.</h3>
+                          <a class="btn btnL" href="https://github.com/TheGuardingDark/runestones">Git Hub Link</a>
+                          <a class="btn btnR" href="https://theguardingdark.github.io/runestones/">Rune Cast</a>
                       </div>
 
                       <div class="mySlides">
@@ -122,9 +134,15 @@
                       </div>
 
                       <div class="mySlides">
-                          <h3>Web Scraping app that uses Mongoose and handlebars to pull articles and save them to a database.</h3>
+                          <h3>The Onion Scraper is a Web Scraping app that uses Mongoose and handlebars to pull articles and save them to a database.</h3>
                           <a class="btn btnL" href="https://github.com/TheGuardingDark/Onion-Scraper">Git Hub Link</a>
                           <a class="btn btnR" href="https://the-scrape-escape.herokuapp.com/">Onion Scraper</a>
+                      </div>
+
+                      <div class="mySlides">
+                        <h3>Friend Finder is a full stack multiple choice quiz which matches users with people/characters using Node and Express.</h3>
+                        <a class="btn btnL" href="https://github.com/TheGuardingDark/Friend-Finder">Git Hub Link</a>
+                        <a class="btn btnR" href="https://the-scrape-escape.herokuapp.com/">Friend Finder</a>
                       </div>
                       
                       <div class="row thumbs">
@@ -141,7 +159,7 @@
                         </div>
   
                         <div class="col">
-                            <img class="demo hoverable circle" src="assets/images/friendFindersquare.png" onclick="currentSlide(4)" alt="friends" style="width:100%;max-width:100px">
+                            <img class="demo hoverable circle" src="assets/images/runesquare.jpg" onclick="currentSlide(4)" alt="runes" style="width:100%;max-width:100px">
                         </div>
   
                         <div class="col">
@@ -154,6 +172,10 @@
   
                         <div class="col">
                             <img class="demo hoverable circle" src="assets/images/scrapersquare.png" onclick="currentSlide(7)" alt="scraper" style="width:100%;max-width:100px">
+                        </div>
+
+                        <div class="col">
+                          <img class="demo hoverable circle" src="assets/images/friendFindersquare.png" onclick="currentSlide(8)" alt="friend finder" style="width:100%;max-width:100px">
                         </div>
                       </div>
   
@@ -184,7 +206,7 @@
                   </div>   
                  
                   
-              <div class="parallax">
+              <div class="parallax" id="index-banner">
                 <video autoplay muted loop id="midVid">
                   <source src="assets/images/arrows.mp4" alt="light arrows">
                   </video>
@@ -197,9 +219,10 @@
           
           
 
-
+        <div class="form">
         <script type="text/javascript" src="assets/js/index.js"></script>
         <script  type="text/javascript" src="https://form.jotform.com/jsform/92311428186153"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>          
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      </div>          
     </body>
 </html>

@@ -328,3 +328,677 @@ img.demo, .hover-shadow {
 .break {
     height: 10px;
 }
+
+@media only screen and (max-width: 2560px) and (min-width: 1441px) {
+
+    .close {
+        top: 54px;
+        right: 468px;
+    }
+    
+    .glowBall {
+        left: -69px;
+    }
+
+    .header {
+        position: relative;
+        left: 11px;
+    }
+
+    .headline {
+        padding-left: 0px;
+        position: relative;
+        left: 9px;
+    }
+
+    video {
+        padding-left: 23px;
+    }
+
+    .overlayContent {
+        left: -149px;
+        top: 39%;
+    }
+
+    .row {
+        padding: 0;
+    }
+
+    .port {
+        position: relative;
+        left: 293px;
+        top: 16px;
+    }
+
+    .tagline {
+        position: relative;
+        left: -6px;
+        padding-left: 34px;
+    }
+
+    .flip-card {
+        left: 364px;
+    }
+
+    h2 {
+        font-size: 4rem;
+        position: relative;
+        left: 9px;
+    }
+
+   .icon {
+       min-width: fit-content;
+   }
+
+   .modalClose {
+       right: 383px;
+   }
+
+   .modal-content {
+       left: -87px;
+   }
+
+   .modal {
+       height: 277px;
+       left: -50px;
+       width: 96%;
+       text-align: center;
+       overflow: visible;
+   } 
+
+   .btnL {
+       left: -94px;
+   }
+
+   .btnR {
+       left: 80px;
+   }
+
+   .thumbs {
+       display: none;
+      
+   }
+
+   .form {
+       position: relative;
+       left: 15px;
+       top: 50px;
+       padding-right: 11px;
+   }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+
+    .close {
+        top: 54px;
+        right: 468px;
+    }
+    
+    .glowBall {
+        left: -69px;
+    }
+
+    .header {
+        position: relative;
+        left: 11px;
+    }
+
+    .headline {
+        padding-left: 0px;
+        position: relative;
+        left: 9px;
+    }
+
+    video {
+        padding-left: 86px;
+    }
+
+    .overlayContent {
+        left: -149px;
+        top: 39%;
+    }
+
+    .row {
+        padding: 0;
+    }
+
+    .port {
+        position: relative;
+        left: 293px;
+        top: 16px;
+    }
+
+    .tagline {
+        position: relative;
+        left: -6px;
+        padding-left: 34px;
+    }
+
+    .flip-card {
+        left: 364px;
+    }
+
+    h2 {
+        font-size: 4rem;
+        position: relative;
+        left: 9px;
+    }
+
+   .icon {
+       min-width: fit-content;
+   }
+
+   .modalClose {
+       right: 383px;
+       font-size: 69px;
+   }
+
+   .modal-content {
+       left: -87px;
+   }
+
+   .modal {
+       height: 277px;
+       left: -50px;
+       width: 96%;
+       text-align: center;
+       overflow: visible;
+       top: 151px;
+   } 
+
+   .aboutHeader {
+       top: -53px;
+   }
+
+   .btnL {
+       left: -94px;
+   }
+
+   .btnR {
+       left: 80px;
+   }
+
+   .thumbs {
+       display: none;
+   }
+
+   .form {
+       position: relative;
+       left: 83px;
+       top: 50px;
+      
+   }
+}
+
+
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+    .close {
+        top: 54px;
+        right: 347px;
+    }
+    
+    .glowBall {
+        left: -104px;
+    }
+
+    .header {
+        position: relative;
+        left: -4px;
+    }
+
+    .headline {
+        padding-left: 0px;
+        position: relative;
+        left: -8px;
+    }
+
+    .overlayContent {
+        left: -125px;
+        top: 41%;
+    }
+
+    .row {
+        padding: 0;
+    }
+
+    .port {
+        position: relative;
+        left: 184px;
+        top: 16px;
+    }
+
+
+    .tagline {
+        position: relative;
+        left: -31px;
+        padding-left: 34px;
+    }
+
+    .flip-card {
+        left: 196px;
+    }
+
+    h2 {
+        font-size: 4rem;
+        position: relative;
+        left: -12px;
+    }
+
+   .icon {
+       min-width: fit-content;
+   }
+
+   .modalClose {
+       right: 186px;
+       font-size: 69px;
+       top: -23px;
+   }
+
+   .modal-content {
+       margin-top: -50px;
+       margin-left: 27px;
+       max-width: 85%;
+   }
+
+   .modal {
+       height: 277px;
+       left: -72px;
+       top: 121px;
+       width: 96%;
+       text-align: center;
+       overflow: visible;
+   }
+
+   .btnL {
+       left: -94px;
+   }
+
+   .btnR {
+       left: 80px;
+   }
+
+   .thumbs {
+      display: none;
+   }
+
+   video {
+       position: relative;
+       left: 46px;
+   }
+
+   .form {
+       position: relative;
+       left: 46px;
+       top: 50px;
+       padding-right: 10px;
+   }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+
+    .close {
+        top: 54px;
+        right: 201px;
+    }
+    
+    .glowBall {
+        left: -390px;
+    }
+
+    .header {
+        position: relative;
+        left: 1px;
+    }
+
+    .headline {
+        padding-left: 0px;
+        position: relative;
+        left: 1px;
+    }
+
+    .overlayContent {
+        left: -54px;
+        top: 39%;
+    }
+
+    .row {
+        padding: 0;
+    }
+
+    .port {
+        position: relative;
+        left: 125px;
+        top: 16px;
+    }
+
+    .tagline {
+        position: relative;
+        left: -26px;
+        padding-left: 34px;
+    }
+
+    .flip-card {
+        left: 169px;
+    }
+
+    h2 {
+        font-size: 4rem;
+        position: relative;
+        left: -6px;
+    }
+
+   .icon {
+       min-width: fit-content;
+   }
+
+   .modalClose {
+       right: 147px;
+   }
+
+   .modal-content {
+       margin-top: -50px;
+       margin-left: 27px;
+       max-width: 85%;
+   }
+
+   .modal {
+       height: 277px;
+       left: -50px;
+       width: 96%;
+       text-align: center;
+       overflow: visible;
+   }
+
+   .btnL {
+       left: -94px;
+   }
+
+   .btnR {
+       left: 80px;
+   }
+
+   .thumbs {
+       display: none;
+   }
+
+   video {
+       position: relative;
+       left: 24px;
+   }
+
+   .form {
+       position: relative;
+       left: 24px;
+       top: 50px;
+       padding-right: 11px;
+   }
+}
+
+
+
+@media only screen and (max-width: 425px) and (min-width: 376px) {
+
+    .close {
+        top: 36px;
+        right: 59px;
+    }
+    
+    .glowBall {
+        left: -191px;
+    }
+
+    .bannerContent {
+        width: 97%;
+    }
+
+    .header {
+        position: relative;
+        left: 7px;
+    }
+
+    .headline {
+        padding-left: 0px;
+        position: relative;
+        left: 7px;
+    }
+
+    video {
+        padding-left: 0px;
+    }
+
+    .overlayContent {
+        left: -16px;
+    }
+
+    .row {
+        padding: 0;
+    }
+
+    .port {
+        position: relative;
+        left: 42px;
+    }
+
+    .tagline {
+        position: relative;
+        left: -21px;
+        padding-left: 34px;
+    }
+
+    .flip-card {
+        left: 37px;
+    }
+
+    h2 {
+        font-size: 3.1rem;
+        position: relative;
+        left: -3px;
+    }
+
+   .icon {
+       min-width: fit-content;
+   }
+
+   .modalClose {
+       right: 51px;
+       font-size: 45px;
+   }
+
+   .mySlides h3 {
+       font-size: 16px;
+   }
+
+   .modal-content {
+       margin-top: -50px;
+       margin-left: 10px;
+   }
+
+   .modal {
+       height: 277px;
+       left: -76px;
+       width: 96%;
+       text-align: center;
+       overflow: visible;
+   }
+
+   .btnL {
+       left: -13px;
+   }
+
+   .btnR {
+       left: 31px;
+   }
+
+   .thumbs {
+       display: none;
+   }
+
+   .form {
+       position: relative;
+       left: 0px;
+       top: 50px;
+       padding-right: 11px;
+   }
+}
+
+
+@media only screen and (max-width: 375px) and (min-width: 361px) {
+
+    .close {
+        top: 36px;
+    }
+    
+    .glowBall {
+        left: -158px;
+    }
+
+    .header {
+        position: relative;
+        left: -4px;
+    }
+
+    .headline {
+        padding-left: 0px;
+    }
+
+    .row {
+        padding: 0;
+    }
+
+    .port {
+        position: relative;
+        left: 26px;
+    }
+
+    .tagline {
+        position: relative;
+        left: -6px;
+    }
+
+    .flip-card {
+        left: 12px;
+    }
+
+    h2 {
+        font-size: 3.1rem;
+        position: relative;
+        left: -7px;
+    }
+
+   .icon {
+       min-width: fit-content;
+   }
+
+   .modalClose {
+       right: 51px;
+   }
+
+   .modal-content {
+       margin-top: -50px;
+   }
+
+   .modal {
+       height: 277px;
+       left: -50px;
+       width: 96%;
+       text-align: center;
+       overflow: visible;
+   }
+
+   .btnL {
+       left: -13px;
+   }
+
+   .btnR {
+       left: 31px;
+   }
+
+   .thumbs {
+       display: none;
+   }
+}
+
+@media only screen and (max-width: 360px) and (min-width: 320px) {
+
+    .close {
+        top: 41px;
+        right: 88px;
+    }
+    
+    .glowBall {
+        left: -133px;
+    }
+
+    .overlayContent {
+        left: -14px;
+    }
+
+    .header {
+        position: relative;
+        left: -5px;
+    }
+
+    .headline {
+        padding-left: 0px;
+        position: relative;
+        left: -7px;
+    }
+
+    .row {
+        padding: 0;
+    }
+
+    .port {
+        position: relative;
+        left: 20px;
+    }
+
+    .tagline {
+        position: relative;
+        left: -7px;
+        padding: 0 7px;
+    }
+
+    .flip-card {
+        left: -1px;
+    }
+
+    h2 {
+        position: relative;
+        left: -8px;
+    }
+
+   .icon {
+       min-width: fit-content;
+   }
+
+   .modalClose {
+       right: 51px;
+   }
+
+   .modal-content {
+       margin-top: -50px;
+       width: 97%;
+   }
+
+   .modal {
+       height: 277px;
+       left: -47px;
+       text-align: center;
+       overflow: visible;
+   }
+
+   .btnL {
+       left: -13px;
+   }
+
+   .btnR {
+       left: 18px;
+   }
+
+   .thumbs {
+       display: none;
+   }
+}

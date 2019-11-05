@@ -239,13 +239,13 @@ img.demo, .hover-shadow {
     background-color: #800000;
 }
 
-.btnL {
+/* .btnL {
     left: 291px;
 }
 
 .btnR {
     left: 472px;
-}
+} */
 
 /* About Section */
 
@@ -920,7 +920,7 @@ img.demo, .hover-shadow {
    }
 }
 
-@media only screen and (max-width: 360px) and (min-width: 320px) {
+@media only screen and (max-width: 360px) and (min-width: 321px) {
 
     .close {
         top: 41px;
@@ -1001,4 +1001,85 @@ img.demo, .hover-shadow {
    .thumbs {
        display: none;
    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .glowBall {
+        left: -155px;
+    }
+
+    .close {
+        right: 51px;
+        top: 37px;
+    }
+
+    .overlayContent {
+        left: -18px;
+    }
+
+    .header {
+        position: relative;
+        left: 1px;
+    }
+
+    .headline {
+        position: relative;
+        left: 48px;
+        padding-left: 0;
+    }
+
+    .code {
+        position: relative;
+        left: -3px;
+    }
+
+    .port {
+        position: relative;
+        left: 46px;
+    }
+
+    .about {
+        position: relative;
+        left: -22px;
+    }
+
+    .aboutHeader {
+        left: 17px;
+    }
+
+    .tagline {
+        position: relative;
+        left: -21px;
+    }
+
+    .flip-card {
+        display: none;
+    }
+
+    .mobilePic {
+        position: relative;
+        left: -4px;
+        top: -80px;
+        margin-bottom: 10px;
+    }
+
+    .modalClose {
+        right: 62px;
+    }
+
+    .modal-content {
+        width: 80%;
+        left: -15px;
+        top: -22px;
+    }
+
+    .fab {
+        font-size: 47px;
+        padding: 13px;
+    }
+
+    .mySlides a {
+        margin-bottom: 14px;
+    }
 }

@@ -3,7 +3,7 @@ var video = document.getElementById("bannerVid");
 var modal = document.getElementById("portModal");
 var span = document.getElementsByClassName("modalClose")[0];
 var slideIndex = 1;
-showSlides(slideIndex);
+// showSlides(slideIndex);
 
 video.playbackRate = 0.75;
 
